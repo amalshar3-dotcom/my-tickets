@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -33,7 +34,7 @@ body{
 .hidden{display:none!important}
 
 /* Первая страница */
-.start-content{padding:40px 28px 30px}
+.start-content{padding:35px 28px 30px}
 .start-content h2{
   text-align:center;font-size:25px;font-weight:500;
   margin-bottom:12px;
@@ -42,35 +43,35 @@ body{
   text-align:center;color:#aaa;font-size:14px;
   line-height:1.5;margin-bottom:26px;
 }
+.field{margin-bottom:22px}
 .input-label{
   display:block;font-size:14px;color:#aaa;margin-bottom:10px;
 }
 .transport-input,.quantity-input{
-  width:100%;height:54px;border:1px solid #444;
-  border-radius:14px;background:#2E2E2E;color:#fff;
-  padding:0 16px;font-size:17px;outline:none;
+  display:block;width:100%;height:52px;
+  border:1px solid #444;border-radius:14px;
+  background:#2E2E2E;color:#fff;
+  padding:0 16px;font-size:16px;outline:none;
 }
-.transport-input:focus,.quantity-input:focus{border-color:#0696F9}
-.field{margin-bottom:24px}
-
+.transport-input:focus,.quantity-input:focus{
+  border-color:#0696F9;
+}
 .transport-options{
-  display:flex;flex-direction:column;gap:12px;
-  margin-top:12px;
+  display:flex;flex-direction:column;gap:10px;margin-top:12px;
 }
 .transport-option{
   display:flex;align-items:center;gap:12px;
-  min-height:58px;padding:14px 16px;
+  min-height:54px;padding:13px 16px;
   border:1px solid #444;border-radius:14px;
   background:#2E2E2E;font-size:16px;cursor:pointer;
 }
-.transport-option input{
-  width:20px;height:20px;accent-color:#0696F9;
-  flex:none;cursor:pointer;
-}
 .transport-option:has(input:checked){border-color:#0696F9}
-.price-note{font-size:13px;color:#999;margin-top:10px}
+.transport-option input{
+  width:20px;height:20px;accent-color:#0696F9;cursor:pointer;
+}
+.price-note{font-size:13px;color:#999;margin-top:9px}
 .continue-btn{
-  width:100%;height:54px;margin-top:8px;
+  width:100%;height:54px;margin-top:4px;
   border:0;border-radius:14px;background:#0696F9;
   color:#fff;font-size:17px;font-weight:500;cursor:pointer;
 }
@@ -78,9 +79,7 @@ body{
   margin-top:18px;text-align:center;
   color:#777;font-size:12px;line-height:1.5;
 }
-.error{
-  color:#ff7777;font-size:13px;margin-top:12px;
-}
+.error{color:#ff7777;font-size:13px;margin-top:12px}
 
 /* Билет */
 .ticket{
@@ -90,11 +89,10 @@ body{
 .ticket-top{
   min-height:140px;padding:20px 12px;
   background:#0696F9;border-radius:32px 32px 0 0;
-  display:flex;flex-direction:column;gap:7px;
-  align-items:center;justify-content:center;
+  display:flex;align-items:center;justify-content:center;
   font-size:24px;font-weight:500;text-align:center;
+  overflow-wrap:anywhere;
 }
-.ticket-top small{font-size:14px;font-weight:400;opacity:.85}
 .perf{
   position:relative;height:8px;background:#2E2E2E;
   display:flex;justify-content:space-between;
@@ -122,16 +120,25 @@ body{
   font-size:32px;font-weight:400;
   font-family:"Roboto Condensed","Arial Narrow",Inter,sans-serif;
 }
-.colon{font-size:32px;font-weight:400;height:56px;display:flex;align-items:center}
+.colon{
+  font-size:32px;font-weight:400;height:56px;
+  display:flex;align-items:center;
+}
 .group span{font-size:14px;color:#8E8E8E}
 .hint{margin-top:20px;font-size:14px;color:#8E8E8E}
 
 /* Детали */
 .details{margin:32px 32px 0}
-.details h2,.block h2{font-size:22px;font-weight:500;margin-bottom:12px}
+.details h2,.block h2{
+  font-size:22px;font-weight:500;margin-bottom:12px;
+}
 .row{display:flex;align-items:center;gap:16px}
-.row .txt{flex:1;min-width:0;padding:14px 0;border-bottom:1px solid #333}
-.txt small{display:block;font-size:14px;color:#8E8E8E;margin-bottom:2px}
+.row .txt{
+  flex:1;min-width:0;padding:14px 0;border-bottom:1px solid #333;
+}
+.txt small{
+  display:block;font-size:14px;color:#8E8E8E;margin-bottom:2px;
+}
 .txt b{font-size:18px;font-weight:400;overflow-wrap:anywhere}
 .block{margin:24px 32px 0}
 .total{
@@ -140,16 +147,25 @@ body{
 }
 .total b{font-size:18px;font-weight:500}
 .total strong{font-size:24px;font-weight:500;white-space:nowrap}
-.actions{margin:12px 32px 0;background:#2E2E2E;border-radius:16px;overflow:hidden}
-.action{display:flex;align-items:center;gap:16px;padding:18px 20px;font-size:18px;font-weight:400}
+.actions{
+  margin:12px 32px 0;background:#2E2E2E;
+  border-radius:16px;overflow:hidden;
+}
+.action{
+  display:flex;align-items:center;gap:16px;
+  padding:18px 20px;font-size:18px;font-weight:400;
+}
 .action+.action{border-top:1px solid #333}
-.back-btn{background:none;border:0;color:#fff;cursor:pointer;font-size:16px;padding:8px}
+.back-btn{
+  background:none;border:0;color:#fff;cursor:pointer;
+  font-size:16px;padding:8px;
+}
 </style>
 </head>
 
 <body>
 
-<!-- СТРАНИЦА 1 -->
+<!-- СТРАНИЦА 1: НАСТРОЙКА БИЛЕТА -->
 <div class="screen" id="page1">
   <div class="header">
     <span style="width:24px"></span>
@@ -159,11 +175,14 @@ body{
 
   <div class="start-content">
     <h2>Новый билет</h2>
-    <p>Укажи номер транспорта, выбери его тип и количество билетов.</p>
+    <p>Укажи данные транспорта и количество билетов.</p>
 
     <form id="ticketForm">
+
       <div class="field">
-        <label class="input-label" for="transportNumber">Номер транспорта</label>
+        <label class="input-label" for="transportNumber">
+          Номер автобуса или троллейбуса
+        </label>
         <input class="transport-input" id="transportNumber"
           type="text" placeholder="Например, 8" maxlength="20" required>
       </div>
@@ -183,7 +202,25 @@ body{
       </div>
 
       <div class="field">
-        <label class="input-label" for="quantity">Количество билетов</label>
+        <label class="input-label" for="registrationNumber">
+          Регистрационный номер
+        </label>
+        <input class="transport-input" id="registrationNumber"
+          type="text" placeholder="Например, ТР2345" maxlength="30" required>
+      </div>
+
+      <div class="field">
+        <label class="input-label" for="onboardNumber">
+          Бортовой номер
+        </label>
+        <input class="transport-input" id="onboardNumber"
+          type="text" placeholder="Например, 2345" maxlength="30" required>
+      </div>
+
+      <div class="field">
+        <label class="input-label" for="quantity">
+          Количество билетов
+        </label>
         <input class="quantity-input" id="quantity"
           type="number" min="1" max="99" value="2" step="1" required>
         <div class="price-note">Стоимость одного билета — 46 ₽</div>
@@ -193,11 +230,13 @@ body{
       <div class="error hidden" id="errorMessage"></div>
     </form>
 
-    <div class="note">Выбранные параметры отобразятся на странице билета.</div>
+    <div class="note">
+      Выбранные данные отобразятся на странице билета.
+    </div>
   </div>
 </div>
 
-<!-- СТРАНИЦА 2 -->
+<!-- СТРАНИЦА 2: БИЛЕТ -->
 <div class="screen hidden" id="page2">
   <div class="header">
     <button class="back-btn" id="backBtn" type="button">‹</button>
@@ -206,32 +245,46 @@ body{
   </div>
 
   <div class="ticket">
-    <div class="ticket-top">
-      <div id="transportTitle">Троллейбус 8</div>
-      <small id="ticketCountTop">2 билета</small>
-    </div>
+    <div class="ticket-top" id="transportTitle">Троллейбус 8</div>
+
     <div class="perf">
       <i></i><i></i><i></i><i></i><i></i>
       <i></i><i></i><i></i><i></i>
     </div>
+
     <div class="ticket-bottom">
       <h2>Срок действия билета</h2>
+
       <div class="timer">
         <div class="group">
-          <div class="tiles"><div class="tile" id="min1">5</div><div class="tile" id="min2">9</div></div>
+          <div class="tiles">
+            <div class="tile" id="min1">5</div>
+            <div class="tile" id="min2">9</div>
+          </div>
           <span>мин</span>
         </div>
+
         <div class="colon">:</div>
+
         <div class="group">
-          <div class="tiles"><div class="tile" id="sec1">5</div><div class="tile" id="sec2">9</div></div>
+          <div class="tiles">
+            <div class="tile" id="sec1">5</div>
+            <div class="tile" id="sec2">9</div>
+          </div>
           <span>сек</span>
         </div>
+
         <div class="colon">:</div>
+
         <div class="group">
-          <div class="tiles"><div class="tile" id="ms1">9</div><div class="tile" id="ms2">9</div></div>
+          <div class="tiles">
+            <div class="tile" id="ms1">9</div>
+            <div class="tile" id="ms2">9</div>
+          </div>
           <span>мс</span>
         </div>
       </div>
+
       <p class="hint">Покажите экран контролёру</p>
     </div>
   </div>
@@ -240,48 +293,88 @@ body{
     <h2>Детали</h2>
 
     <div class="row">
-      <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h4M7 14h6"/></svg>
-      <div class="txt"><small>Регистрационный номер</small><b>ТР2345</b></div>
+      <svg class="ico" viewBox="0 0 24 24">
+        <rect x="3" y="6" width="18" height="12" rx="2"/>
+        <path d="M7 10h4M7 14h6"/>
+      </svg>
+      <div class="txt">
+        <small>Регистрационный номер</small>
+        <b id="registrationOutput">ТР2345</b>
+      </div>
     </div>
 
     <div class="row">
-      <svg class="ico" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 12h14M8 20l1-3M16 20l-1-3"/></svg>
-      <div class="txt"><small>Бортовой номер</small><b>№2345</b></div>
+      <svg class="ico" viewBox="0 0 24 24">
+        <rect x="5" y="3" width="14" height="14" rx="3"/>
+        <path d="M5 12h14M8 20l1-3M16 20l-1-3"/>
+      </svg>
+      <div class="txt">
+        <small>Бортовой номер</small>
+        <b id="onboardOutput">№2345</b>
+      </div>
     </div>
 
     <div class="row">
-      <svg class="ico" viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12M9 20v-6h6v6"/></svg>
-      <div class="txt"><small>Перевозчик</small><b id="carrier">Троллейбусное Депо №1</b></div>
+      <svg class="ico" viewBox="0 0 24 24">
+        <path d="M4 20V8l8-4 8 4v12M9 20v-6h6v6"/>
+      </svg>
+      <div class="txt">
+        <small>Перевозчик</small>
+        <b id="carrier">Троллейбусное Депо №1</b>
+      </div>
     </div>
 
     <div class="row">
-      <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      <div class="txt"><small>Срок действия</small><b id="expiryDate">Загрузка...</b></div>
+      <svg class="ico" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7v5l3 2"/>
+      </svg>
+      <div class="txt">
+        <small>Срок действия</small>
+        <b id="expiryDate">Загрузка...</b>
+      </div>
     </div>
 
     <div class="row">
-      <svg class="ico" viewBox="0 0 24 24"><path d="M4 12h16M15 7l5 5-5 5"/></svg>
-      <div class="txt"><small>Направление</small><b>В одну сторону</b></div>
+      <svg class="ico" viewBox="0 0 24 24">
+        <path d="M4 12h16M15 7l5 5-5 5"/>
+      </svg>
+      <div class="txt">
+        <small>Направление</small>
+        <b>В одну сторону</b>
+      </div>
     </div>
 
     <div class="row">
-      <svg class="ico" viewBox="0 0 24 24"><path d="M3 9a2 2 0 0 0 0 6v3h18v-3a2 2 0 0 1 0-6V6H3z"/></svg>
-      <div class="txt"><small>Количество билетов</small><b id="ticketCount">2</b></div>
+      <svg class="ico" viewBox="0 0 24 24">
+        <path d="M3 9a2 2 0 0 0 0 6v3h18v-3a2 2 0 0 1 0-6V6H3z"/>
+      </svg>
+      <div class="txt">
+        <small>Количество билетов</small>
+        <b id="ticketCount">2</b>
+      </div>
     </div>
   </div>
 
   <div class="block">
     <h2>Стоимость заказа</h2>
-    <div class="total"><b>Итого</b><strong id="totalPrice">96 ₽</strong></div>
+    <div class="total">
+      <b>Итого</b>
+      <strong id="totalPrice">92 ₽</strong>
+    </div>
   </div>
 
   <div class="actions">
     <div class="action">
-      <svg class="ico" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/></svg>
+      <svg class="ico" viewBox="0 0 24 24">
+        <path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/>
+      </svg>
       Получить чек
     </div>
     <div class="action">
-      <svg class="ico" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1M4 13h3v5H4zM17 13h3v5h-3z"/></svg>
+      <svg class="ico" viewBox="0 0 24 24">
+        <path d="M4 13v-1a8 8 0 0 1 16 0v1M4 13h3v5H4zM17 13h3v5h-3z"/>
+      </svg>
       Обратиться в поддержку
     </div>
   </div>
@@ -291,8 +384,6 @@ body{
 const page1 = document.getElementById('page1');
 const page2 = document.getElementById('page2');
 const form = document.getElementById('ticketForm');
-const input = document.getElementById('transportNumber');
-const quantityInput = document.getElementById('quantity');
 const errorMessage = document.getElementById('errorMessage');
 
 let timerInterval = null;
@@ -301,16 +392,26 @@ let endTime = null;
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const number = input.value.trim();
-  const quantity = Number(quantityInput.value);
+  const number =
+    document.getElementById('transportNumber').value.trim();
+
+  const registration =
+    document.getElementById('registrationNumber').value.trim();
+
+  const onboard =
+    document.getElementById('onboardNumber').value.trim();
+
+  const quantity =
+    Number(document.getElementById('quantity').value);
+
   const selectedTypes = Array.from(
     document.querySelectorAll('input[name="transportType"]:checked')
   ).map(el => el.value);
 
   errorMessage.classList.add('hidden');
 
-  if (!number) {
-    showError('Введи номер транспорта.');
+  if (!number || !registration || !onboard) {
+    showError('Заполни все поля с номерами транспорта.');
     return;
   }
 
@@ -320,22 +421,25 @@ form.addEventListener('submit', function(event) {
   }
 
   if (!Number.isInteger(quantity) || quantity < 1 || quantity > 99) {
-    showError('Количество билетов должно быть от 1 до 99.');
+    showError('Укажи количество билетов от 1 до 99.');
     return;
   }
 
-  // Название транспорта на билете
+  // Название транспорта
   document.getElementById('transportTitle').textContent =
     selectedTypes.map(type => type + ' ' + number).join(' / ');
 
-  // Количество билетов и стоимость
+  // Номера из первой страницы
+  document.getElementById('registrationOutput').textContent = registration;
+  document.getElementById('onboardOutput').textContent =
+    onboard.startsWith('№') ? onboard : '№' + onboard;
+
+  // Количество и стоимость: 46 рублей за билет
   document.getElementById('ticketCount').textContent = quantity;
-  document.getElementById('ticketCountTop').textContent =
-    quantity + ' ' + getTicketWord(quantity);
   document.getElementById('totalPrice').textContent =
     (quantity * 46).toLocaleString('ru-RU') + ' ₽';
 
-  // Перевозчик меняется в зависимости от выбора
+  // Перевозчик в зависимости от типа транспорта
   if (selectedTypes.length === 2) {
     document.getElementById('carrier').textContent =
       'Автобус / троллейбус';
@@ -346,13 +450,14 @@ form.addEventListener('submit', function(event) {
       'Троллейбусное Депо №1';
   }
 
-  // Запуск таймера на 59 минут 59 секунд
+  // Таймер 59 минут 59 секунд
   endTime = Date.now() + (59 * 60 * 1000) + (59 * 1000);
 
   page1.classList.add('hidden');
   page2.classList.remove('hidden');
 
   if (timerInterval) clearInterval(timerInterval);
+
   updateTimer();
   timerInterval = setInterval(updateTimer, 50);
 
@@ -362,15 +467,6 @@ form.addEventListener('submit', function(event) {
 function showError(message) {
   errorMessage.textContent = message;
   errorMessage.classList.remove('hidden');
-}
-
-function getTicketWord(n) {
-  const lastTwo = n % 100;
-  if (lastTwo >= 11 && lastTwo <= 14) return 'билетов';
-  const last = n % 10;
-  if (last === 1) return 'билет';
-  if (last >= 2 && last <= 4) return 'билета';
-  return 'билетов';
 }
 
 document.getElementById('backBtn').addEventListener('click', function() {
@@ -409,14 +505,15 @@ function updateTimer() {
   document.getElementById('ms2').textContent = ms[1];
 
   const expiry = new Date(endTime);
+
   const dateText = new Intl.DateTimeFormat('ru-RU', {
     day: 'numeric',
     month: 'long',
     year: 'numeric'
   }).format(expiry);
 
-  const timeText = pad(expiry.getHours()) + ':' +
-                   pad(expiry.getMinutes());
+  const timeText =
+    pad(expiry.getHours()) + ':' + pad(expiry.getMinutes());
 
   document.getElementById('expiryDate').textContent =
     'до ' + dateText + ' г. до ' + timeText;
